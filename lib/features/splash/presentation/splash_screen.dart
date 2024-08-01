@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // Future.delayed(const Duration(seconds: 3), () => Navigator.pushReplacementNamed(context, '/home'));
+    Future.delayed(const Duration(seconds: 2), () => Navigator.pushReplacementNamed(context, '/home'));
   }
 
   @override
@@ -52,8 +52,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Dad", style: theme.textTheme.titleLarge),
-                    Text("Jokes", style: theme.textTheme.titleLarge?.copyWith(color: AppColors.orange)),
+                    Text("DAD", style: theme.textTheme.titleLarge),
+                    Text("JOKES", style: theme.textTheme.titleLarge?.copyWith(color: AppColors.orange)),
                   ],
                 ),
                 const SizedBox(height: 150)
