@@ -47,6 +47,8 @@ class _JokeQuestionAnswerContainerState extends State<JokeQuestionAnswerContaine
                           textAlign: TextAlign.start, style: theme.textTheme.bodyLarge);
                     } else if (state is JokesLoadingState) {
                       return const Expanded(child: Center(child: CircularProgressIndicator(color: Colors.orange)));
+                    } else if (state is JokesErrorState) {
+                      return Text(state.errorMessage);
                     } else {
                       return const SizedBox.shrink();
                     }
